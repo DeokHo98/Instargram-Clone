@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		FE241B4E27E982330078DE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B4D27E982330078DE35 /* AppDelegate.swift */; };
 		FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B4F27E982330078DE35 /* SceneDelegate.swift */; };
-		FE241B5227E982330078DE35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B5127E982330078DE35 /* ViewController.swift */; };
-		FE241B5527E982330078DE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE241B5327E982330078DE35 /* Main.storyboard */; };
 		FE241B5727E982340078DE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE241B5627E982340078DE35 /* Assets.xcassets */; };
 		FE241B5A27E982340078DE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE241B5827E982340078DE35 /* LaunchScreen.storyboard */; };
+		FE241B6927E983320078DE35 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6827E983320078DE35 /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE241B4A27E982330078DE35 /* Instargram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instargram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE241B4D27E982330078DE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE241B4F27E982330078DE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE241B5127E982330078DE35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE241B5427E982330078DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE241B5627E982340078DE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE241B5927E982340078DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE241B5B27E982340078DE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE241B6827E983320078DE35 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,62 @@
 		FE241B4C27E982330078DE35 /* Instargram-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				FE241B6727E982C20078DE35 /* Model */,
+				FE241B6627E982C00078DE35 /* View */,
+				FE241B6527E982BD0078DE35 /* ViewModel */,
+				FE241B6427E982BA0078DE35 /* Controller */,
+				FE241B6327E982B70078DE35 /* API */,
+				FE241B6227E982B40078DE35 /* Utils */,
 				FE241B4D27E982330078DE35 /* AppDelegate.swift */,
 				FE241B4F27E982330078DE35 /* SceneDelegate.swift */,
-				FE241B5127E982330078DE35 /* ViewController.swift */,
-				FE241B5327E982330078DE35 /* Main.storyboard */,
 				FE241B5627E982340078DE35 /* Assets.xcassets */,
 				FE241B5827E982340078DE35 /* LaunchScreen.storyboard */,
 				FE241B5B27E982340078DE35 /* Info.plist */,
 			);
 			path = "Instargram-Clone";
+			sourceTree = "<group>";
+		};
+		FE241B6227E982B40078DE35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FE241B6327E982B70078DE35 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FE241B6427E982BA0078DE35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE241B6827E983320078DE35 /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE241B6527E982BD0078DE35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE241B6627E982C00078DE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE241B6727E982C20078DE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +172,6 @@
 			files = (
 				FE241B5A27E982340078DE35 /* LaunchScreen.storyboard in Resources */,
 				FE241B5727E982340078DE35 /* Assets.xcassets in Resources */,
-				FE241B5527E982330078DE35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE241B5227E982330078DE35 /* ViewController.swift in Sources */,
 				FE241B4E27E982330078DE35 /* AppDelegate.swift in Sources */,
+				FE241B6927E983320078DE35 /* MainTabController.swift in Sources */,
 				FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE241B5327E982330078DE35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE241B5427E982330078DE35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE241B5827E982340078DE35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
