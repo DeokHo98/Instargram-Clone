@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F93560B4A579A4D435EC291 /* Pods_Instargram_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDF1BA6EEEDA4F0C8B4BA1A /* Pods_Instargram_Clone.framework */; };
 		FE241B4E27E982330078DE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B4D27E982330078DE35 /* AppDelegate.swift */; };
 		FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B4F27E982330078DE35 /* SceneDelegate.swift */; };
 		FE241B5727E982340078DE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE241B5627E982340078DE35 /* Assets.xcassets */; };
 		FE241B5A27E982340078DE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE241B5827E982340078DE35 /* LaunchScreen.storyboard */; };
 		FE241B6927E983320078DE35 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6827E983320078DE35 /* MainTabController.swift */; };
+		FE241B6B27E986AE0078DE35 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6A27E986AE0078DE35 /* FeedController.swift */; };
+		FE241B6D27E986C50078DE35 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6C27E986C50078DE35 /* SearchController.swift */; };
+		FE241B6F27E986DC0078DE35 /* imageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */; };
+		FE241B7127E986ED0078DE35 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7027E986ED0078DE35 /* NotificationController.swift */; };
+		FE241B7327E986FA0078DE35 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7227E986FA0078DE35 /* ProfileController.swift */; };
+		FE241B7527E98F450078DE35 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7427E98F450078DE35 /* FeedCell.swift */; };
+		FE241B7727E9903F0078DE35 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7627E9903F0078DE35 /* extension.swift */; };
+		FE321DBF27E99BBE00C1468F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DBE27E99BBE00C1468F /* LoginViewController.swift */; };
+		FE321DC127E99BC900C1468F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC027E99BC900C1468F /* RegisterViewController.swift */; };
+		FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC227E9BD6800C1468F /* AuthViewModel.swift */; };
+		FEEE6CA827F4315900F5B0AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A69D5FC72A5566262E6F167 /* Pods-Instargram-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instargram-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Instargram-Clone/Pods-Instargram-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		6E9F1493F5EE171E15C105E3 /* Pods-Instargram-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instargram-Clone.release.xcconfig"; path = "Target Support Files/Pods-Instargram-Clone/Pods-Instargram-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		EFDF1BA6EEEDA4F0C8B4BA1A /* Pods_Instargram_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instargram_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE241B4A27E982330078DE35 /* Instargram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instargram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE241B4D27E982330078DE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE241B4F27E982330078DE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +37,17 @@
 		FE241B5927E982340078DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE241B5B27E982340078DE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE241B6827E983320078DE35 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		FE241B6A27E986AE0078DE35 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		FE241B6C27E986C50078DE35 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSelectorController.swift; sourceTree = "<group>"; };
+		FE241B7027E986ED0078DE35 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FE241B7227E986FA0078DE35 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		FE241B7427E98F450078DE35 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		FE241B7627E9903F0078DE35 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		FE321DBE27E99BBE00C1468F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE321DC027E99BC900C1468F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FE321DC227E9BD6800C1468F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F93560B4A579A4D435EC291 /* Pods_Instargram_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3B2F924340F2EC141B298EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A69D5FC72A5566262E6F167 /* Pods-Instargram-Clone.debug.xcconfig */,
+				6E9F1493F5EE171E15C105E3 /* Pods-Instargram-Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FE241B4127E982330078DE35 = {
 			isa = PBXGroup;
 			children = (
 				FE241B4C27E982330078DE35 /* Instargram-Clone */,
 				FE241B4B27E982330078DE35 /* Products */,
+				B3B2F924340F2EC141B298EC /* Pods */,
+				FE267886C878447E491A4634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +103,7 @@
 				FE241B5627E982340078DE35 /* Assets.xcassets */,
 				FE241B5827E982340078DE35 /* LaunchScreen.storyboard */,
 				FE241B5B27E982340078DE35 /* Info.plist */,
+				FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */,
 			);
 			path = "Instargram-Clone";
 			sourceTree = "<group>";
@@ -72,6 +111,7 @@
 		FE241B6227E982B40078DE35 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FE241B7627E9903F0078DE35 /* extension.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -86,7 +126,14 @@
 		FE241B6427E982BA0078DE35 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE321DBE27E99BBE00C1468F /* LoginViewController.swift */,
+				FE321DC027E99BC900C1468F /* RegisterViewController.swift */,
 				FE241B6827E983320078DE35 /* MainTabController.swift */,
+				FE241B6A27E986AE0078DE35 /* FeedController.swift */,
+				FE241B6C27E986C50078DE35 /* SearchController.swift */,
+				FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */,
+				FE241B7027E986ED0078DE35 /* NotificationController.swift */,
+				FE241B7227E986FA0078DE35 /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +141,7 @@
 		FE241B6527E982BD0078DE35 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FE321DC227E9BD6800C1468F /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -101,6 +149,7 @@
 		FE241B6627E982C00078DE35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE241B7427E98F450078DE35 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +161,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FE267886C878447E491A4634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF1BA6EEEDA4F0C8B4BA1A /* Pods_Instargram_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE241B5E27E982340078DE35 /* Build configuration list for PBXNativeTarget "Instargram-Clone" */;
 			buildPhases = (
+				A58FE485D6E48D640C83CCD0 /* [CP] Check Pods Manifest.lock */,
 				FE241B4627E982330078DE35 /* Sources */,
 				FE241B4727E982330078DE35 /* Frameworks */,
 				FE241B4827E982330078DE35 /* Resources */,
+				05A2EEB2B8F35CA3893AA71F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,19 +231,72 @@
 			files = (
 				FE241B5A27E982340078DE35 /* LaunchScreen.storyboard in Resources */,
 				FE241B5727E982340078DE35 /* Assets.xcassets in Resources */,
+				FEEE6CA827F4315900F5B0AA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A2EEB2B8F35CA3893AA71F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instargram-Clone/Pods-Instargram-Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instargram-Clone/Pods-Instargram-Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instargram-Clone/Pods-Instargram-Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58FE485D6E48D640C83CCD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instargram-Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE241B4627E982330078DE35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE241B6F27E986DC0078DE35 /* imageSelectorController.swift in Sources */,
 				FE241B4E27E982330078DE35 /* AppDelegate.swift in Sources */,
+				FE241B6D27E986C50078DE35 /* SearchController.swift in Sources */,
+				FE321DC127E99BC900C1468F /* RegisterViewController.swift in Sources */,
+				FE241B7727E9903F0078DE35 /* extension.swift in Sources */,
+				FE241B7127E986ED0078DE35 /* NotificationController.swift in Sources */,
 				FE241B6927E983320078DE35 /* MainTabController.swift in Sources */,
 				FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */,
+				FE241B6B27E986AE0078DE35 /* FeedController.swift in Sources */,
+				FE241B7327E986FA0078DE35 /* ProfileController.swift in Sources */,
+				FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */,
+				FE241B7527E98F450078DE35 /* FeedCell.swift in Sources */,
+				FE321DBF27E99BBE00C1468F /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +432,7 @@
 		};
 		FE241B5F27E982340078DE35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A69D5FC72A5566262E6F167 /* Pods-Instargram-Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +443,7 @@
 				INFOPLIST_FILE = "Instargram-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,6 +461,7 @@
 		};
 		FE241B6027E982340078DE35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9F1493F5EE171E15C105E3 /* Pods-Instargram-Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,7 +472,7 @@
 				INFOPLIST_FILE = "Instargram-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
