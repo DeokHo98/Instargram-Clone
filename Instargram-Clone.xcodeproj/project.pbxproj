@@ -24,6 +24,8 @@
 		FE321DC127E99BC900C1468F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC027E99BC900C1468F /* RegisterViewController.swift */; };
 		FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC227E9BD6800C1468F /* AuthViewModel.swift */; };
 		FEEE6CA827F4315900F5B0AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */; };
+		FEEE6CAA27F4332300F5B0AA /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CA927F4332300F5B0AA /* imageUploader.swift */; };
+		FEEE6CAC27F4333700F5B0AA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CAB27F4333700F5B0AA /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FE321DC027E99BC900C1468F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FE321DC227E9BD6800C1468F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEEE6CA927F4332300F5B0AA /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
+		FEEE6CAB27F4333700F5B0AA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +96,10 @@
 		FE241B4C27E982330078DE35 /* Instargram-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				FE241B6427E982BA0078DE35 /* Controller */,
 				FE241B6727E982C20078DE35 /* Model */,
 				FE241B6627E982C00078DE35 /* View */,
 				FE241B6527E982BD0078DE35 /* ViewModel */,
-				FE241B6427E982BA0078DE35 /* Controller */,
 				FE241B6327E982B70078DE35 /* API */,
 				FE241B6227E982B40078DE35 /* Utils */,
 				FE241B4D27E982330078DE35 /* AppDelegate.swift */,
@@ -119,6 +123,8 @@
 		FE241B6327E982B70078DE35 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				FEEE6CA927F4332300F5B0AA /* imageUploader.swift */,
+				FEEE6CAB27F4333700F5B0AA /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -291,10 +297,12 @@
 				FE241B7727E9903F0078DE35 /* extension.swift in Sources */,
 				FE241B7127E986ED0078DE35 /* NotificationController.swift in Sources */,
 				FE241B6927E983320078DE35 /* MainTabController.swift in Sources */,
+				FEEE6CAA27F4332300F5B0AA /* imageUploader.swift in Sources */,
 				FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */,
 				FE241B6B27E986AE0078DE35 /* FeedController.swift in Sources */,
 				FE241B7327E986FA0078DE35 /* ProfileController.swift in Sources */,
 				FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */,
+				FEEE6CAC27F4333700F5B0AA /* AuthService.swift in Sources */,
 				FE241B7527E98F450078DE35 /* FeedCell.swift in Sources */,
 				FE321DBF27E99BBE00C1468F /* LoginViewController.swift in Sources */,
 			);

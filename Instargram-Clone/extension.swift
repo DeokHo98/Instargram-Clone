@@ -17,14 +17,14 @@ extension UIViewController {
     }
     
     func hideKeyboardWhenTappedAround() {
-            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            view.addGestureRecognizer(tap)
-        }
-        
-        @objc func dismissKeyboard() {
-            view.endEditing(true)
-        }
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
 extension UIButton {
@@ -32,7 +32,7 @@ extension UIButton {
         let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.87), .font: UIFont.systemFont(ofSize: 16)]
         let attributedTitle = NSMutableAttributedString(string: "\(firstPart) ", attributes: atts)
         
-        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.87), .font: UIFont.boldSystemFont(ofSize: 16)]
+        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 1), .font: UIFont.boldSystemFont(ofSize: 16)]
         attributedTitle.append(NSAttributedString(string: secondPart, attributes: boldAtts))
         
         setAttributedTitle(attributedTitle, for: .normal)
@@ -41,10 +41,10 @@ extension UIButton {
     func loginAndReistterButton(title: String) {
         setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)
-       layer.cornerRadius = 5
-       backgroundColor = .systemPurple
+        layer.cornerRadius = 5
+        backgroundColor = .systemPurple
         titleLabel?.font = .systemFont(ofSize: 20)
-       setHeight(50)
+        setHeight(50)
     }
 }
 

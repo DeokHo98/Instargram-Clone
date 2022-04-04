@@ -20,6 +20,7 @@ class MainTabController: UITabBarController {
     //MARK: - 도움메서드
     
     func configureViewController() {
+        //탭바컨트롤러를 설정하는 메서드입니다.
         let layout = UICollectionViewFlowLayout()
         let feed = templatNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: FeedController(collectionViewLayout: layout))
         
@@ -38,6 +39,7 @@ class MainTabController: UITabBarController {
         
     }
     
+    //탭바 아이템 이미지, 선택이미지, 색깔 등을 설정하는 메서드입니다.
     func templatNavigationController(unselectedImage: UIImage, selectedImage: UIImage, rootViewController: UIViewController) -> UINavigationController {
         let nav = UINavigationController(rootViewController: rootViewController)
         nav.tabBarItem.image = unselectedImage

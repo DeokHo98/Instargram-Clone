@@ -13,6 +13,7 @@ class FeedCell: UICollectionViewCell {
     
     //MARK: - 속성
     
+    //프로필 이미지입니다.
     private let profileImageView: UIImageView = {
        let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -22,6 +23,7 @@ class FeedCell: UICollectionViewCell {
         return iv
     }()
     
+    //닉네임의 버튼입니다.
     private lazy var  usernameButton: UIButton = {
        let bt = UIButton()
         bt.setTitle("베놈", for: .normal)
@@ -31,6 +33,7 @@ class FeedCell: UICollectionViewCell {
         return bt
     }()
     
+    //포스트한 이미지입니다.
     private let postImageView: UIImageView  = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -40,6 +43,7 @@ class FeedCell: UICollectionViewCell {
         return iv
     }()
     
+    //댓글을 입력하는 버튼입니다.
     private lazy var commentButton: UIButton = {
         let bt = UIButton()
         bt.setImage(UIImage(named: "comment"), for: .normal)
@@ -48,6 +52,7 @@ class FeedCell: UICollectionViewCell {
         return bt
     }()
     
+    //공유하기 버튼입니다.
     private lazy var shareButton: UIButton = {
         let bt = UIButton()
         bt.setImage(UIImage(named: "send2"), for: .normal)
@@ -56,6 +61,7 @@ class FeedCell: UICollectionViewCell {
         return bt
     }()
     
+    //좋아요 버튼입니다.
     private lazy var likeButton: UIButton = {
         let bt = UIButton()
         bt.setImage(UIImage(named: "like_unselected"), for: .normal)
@@ -64,6 +70,7 @@ class FeedCell: UICollectionViewCell {
         return bt
     }()
     
+    //좋아요 갯수를 나타내는 레이블입니다.
     private let likesLabel: UILabel = {
        let lb = UILabel()
         lb.text = "1 좋아요"
@@ -78,6 +85,7 @@ class FeedCell: UICollectionViewCell {
         return lb
     }()
     
+    //게시글 게시 시간을 나타내는 레이블입니다.
     private let postTimeLabel: UILabel = {
        let lb = UILabel()
         lb.text = "2일 전"
@@ -86,6 +94,7 @@ class FeedCell: UICollectionViewCell {
         return lb
     }()
     
+    //좋아요버튼,댓글달기버튼,공유버튼을 스택뷰로 묶었습니다.
     private lazy var stackView: UIStackView = {
         let sv = UIStackView(arrangedSubviews: [likeButton,commentButton,shareButton])
         sv.axis = .horizontal
@@ -95,6 +104,7 @@ class FeedCell: UICollectionViewCell {
     }()
     //MARK: - 라이프사이클
     
+    //뷰를 올리고 레이아웃을 잡았습니다.
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -131,6 +141,7 @@ class FeedCell: UICollectionViewCell {
     
     //MARK: - 셀렉터
     
+    //닉네임을 터치할때 호출되는 셀렉터입니다.
     @objc func didTapUserName() {
         print("12312312")
     }

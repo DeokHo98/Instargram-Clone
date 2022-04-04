@@ -28,10 +28,12 @@ class FeedController: UICollectionViewController {
 //MARK: - 컬렉션뷰 데이터소스
 
 extension FeedController {
+    //컬렉션뷰의 숫자의 갯수를 설정합니다.
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
+    //컬렉션뷰의 나타낼 셀을 설정합니다.
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FeedCell.identifier, for: indexPath) as? FeedCell else {return UICollectionViewCell()}
         return cell
@@ -40,6 +42,7 @@ extension FeedController {
 
 //MARK: - 컬렉션뷰 레이아웃
 extension FeedController: UICollectionViewDelegateFlowLayout {
+    //컬렉션뷰의 사이즈를 조정하는 플로우 레이아웃 델리게이트입니다.
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = view.frame.width
