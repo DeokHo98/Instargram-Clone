@@ -4,11 +4,8 @@
 ## 사용 기술 & 라이브러리
 Firebase, MVVM 디자인 패턴, SDwebImage, YPImagePicker   
 
-
-          
-          
-           
-
+    
+    
 ## 구현내용
 게시글 올리기   
     
@@ -20,12 +17,8 @@ Firebase, MVVM 디자인 패턴, SDwebImage, YPImagePicker
     
 좋아요나 댓글 알림받기   
      
-    
-     
-         
-            
-             
-                
+
+
 ## 프로젝트를 하면서 배운점
 
 * ### 스토리보드를 사용하지않고 코드로 UI 구현
