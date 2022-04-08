@@ -8,17 +8,16 @@
 import Firebase
 import UIKit
 
-struct AuthCredentials {
-    //필요한 사용자 데이터를 구조화 합니다.
-    let email: String
-    let password: String
-    let fullName: String
-    let userName: String
-    let profileImage: UIImage
-}
+
 
 
 struct AuthService {
+    //로그인 메서드 입니다.
+    static func logUserIn(email: String, password: String, completion: AuthDataResultCallback?) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+        
+    }
+    
     static func registerUser(credentials: AuthCredentials, completion: @escaping(Error?) -> Void) {
         //구조화 시킨 데이터의 이미지를 ImageUploader 메서드를 이용해 파이어베이스 스토리지에 저장합니다.
         ImageUploader.uploadImage(image: credentials.profileImage) { imageurl in

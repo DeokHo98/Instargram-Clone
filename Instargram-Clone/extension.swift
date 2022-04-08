@@ -6,9 +6,26 @@
 //
 
 import UIKit
+import JGProgressHUD
+
+public let hud = JGProgressHUD(style: .dark)
 
 extension UIViewController {
-    func gradient() {
+    
+    //로딩표시기
+    func showLoader(_ show: Bool) {
+        view.endEditing(true)
+        
+        if show {
+            hud.show(in: view)
+        } else {
+            hud.dismiss()
+        }
+    }
+    
+    
+    //인스타그램의 그라데이션 컬러를 만들어주는 확장 함수
+    func gradient(view: UIView) {
     let gradient = CAGradientLayer()
     gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
     gradient.locations = [0,1]
@@ -16,6 +33,7 @@ extension UIViewController {
     gradient.frame = view.frame
     }
     
+    //다른곳을 클릭하면 키보드가 내려가게하는 확장 함수
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -28,6 +46,7 @@ extension UIViewController {
 }
 
 extension UIButton {
+    //어트리뷰트 타이틀을 사용하는 두개의 버튼을 위해 확장한 함수
     func attributedTitle(firstPart: String, secondPart: String) {
         let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.87), .font: UIFont.systemFont(ofSize: 16)]
         let attributedTitle = NSMutableAttributedString(string: "\(firstPart) ", attributes: atts)
@@ -38,6 +57,7 @@ extension UIButton {
         setAttributedTitle(attributedTitle, for: .normal)
     }
     
+    //로그인버튼과 회원가입버튼의 중복을 위해 확장한 함수입니다.
     func loginAndReistterButton(title: String) {
         setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)
@@ -49,6 +69,7 @@ extension UIButton {
 }
 
 extension UITextField {
+    //회원가입이나 로그인할때 텍스트필드들이 계속 중복사용되기때문에 만든 함수
     func loginAndReisterTextField(title: String,isSecureTextEntry: Bool = false) {
         borderStyle = .none
         textColor = .white

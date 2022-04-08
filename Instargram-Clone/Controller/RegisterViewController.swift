@@ -17,6 +17,8 @@ class RegisterViewController: UIViewController {
     //프로필에 추가한 이미지를 저장하는 변수입니다.
     private var profileImage: UIImage?
     
+    weak var deleagte: AuthebtucatuibDelegate?
+    
     //프로필 이미지 추가 버튼입니다.
     private let plusPhotoButton: UIButton = {
         let bt = UIButton(type: .system)
@@ -92,7 +94,7 @@ class RegisterViewController: UIViewController {
     //MARK: - 도움메서드
     //뷰를올리고 오토레이아웃을 잡는 메서드입니다.
     func confiureView() {
-        gradient()
+        gradient(view: view)
         
         hideKeyboardWhenTappedAround()
         
@@ -163,7 +165,7 @@ class RegisterViewController: UIViewController {
                 return
             }
             
-            print("회원가입 유저 성공")
+            self.deleagte?.authenticationComplete()
         }
     }
 }

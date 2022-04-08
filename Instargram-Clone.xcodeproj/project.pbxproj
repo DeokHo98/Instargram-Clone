@@ -17,15 +17,39 @@
 		FE241B6D27E986C50078DE35 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6C27E986C50078DE35 /* SearchController.swift */; };
 		FE241B6F27E986DC0078DE35 /* imageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */; };
 		FE241B7127E986ED0078DE35 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7027E986ED0078DE35 /* NotificationController.swift */; };
-		FE241B7327E986FA0078DE35 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7227E986FA0078DE35 /* ProfileController.swift */; };
 		FE241B7527E98F450078DE35 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7427E98F450078DE35 /* FeedCell.swift */; };
 		FE241B7727E9903F0078DE35 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE241B7627E9903F0078DE35 /* extension.swift */; };
 		FE321DBF27E99BBE00C1468F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DBE27E99BBE00C1468F /* LoginViewController.swift */; };
 		FE321DC127E99BC900C1468F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC027E99BC900C1468F /* RegisterViewController.swift */; };
 		FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE321DC227E9BD6800C1468F /* AuthViewModel.swift */; };
+		FEA2DAAB27FEAF67002E3248 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA2DAAA27FEAF67002E3248 /* NotificationCell.swift */; };
+		FEA2DAAD27FEB49F002E3248 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA2DAAC27FEB49F002E3248 /* Notification.swift */; };
+		FEA2DAAF27FEB676002E3248 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA2DAAE27FEB676002E3248 /* NotificationService.swift */; };
+		FEA2DAB127FEBE8C002E3248 /* NotificationViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA2DAB027FEBE8C002E3248 /* NotificationViewmodel.swift */; };
+		FEA333E527FB33BB00EC8FF8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333E427FB33BB00EC8FF8 /* UserService.swift */; };
+		FEA333E927FB354800EC8FF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333E827FB354800EC8FF8 /* User.swift */; };
+		FEA333EB27FB38E000EC8FF8 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333EA27FB38E000EC8FF8 /* ProfileHeaderViewModel.swift */; };
+		FEA333EF27FB3EB200EC8FF8 /* AuthCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333EE27FB3EB200EC8FF8 /* AuthCredentials.swift */; };
+		FEA333F127FB592100EC8FF8 /* 고민.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333F027FB592100EC8FF8 /* 고민.swift */; };
+		FEA333F327FB5C0000EC8FF8 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333F227FB5C0000EC8FF8 /* SearchCell.swift */; };
+		FEA333F527FB64C800EC8FF8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333F427FB64C800EC8FF8 /* SearchViewModel.swift */; };
+		FEA333F727FC35D700EC8FF8 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333F627FC35D700EC8FF8 /* UploadPostController.swift */; };
+		FEA333F927FC383E00EC8FF8 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333F827FC383E00EC8FF8 /* InputTextView.swift */; };
+		FEA333FB27FC3EFE00EC8FF8 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333FA27FC3EFE00EC8FF8 /* PostService.swift */; };
+		FEA333FD27FC45D200EC8FF8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333FC27FC45D200EC8FF8 /* Post.swift */; };
+		FEA333FF27FC48DE00EC8FF8 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA333FE27FC48DE00EC8FF8 /* PostViewModel.swift */; };
+		FEEA4BE027FD622A00A93401 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BDF27FD622A00A93401 /* CommentsController.swift */; };
+		FEEA4BE227FD630E00A93401 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BE127FD630E00A93401 /* CommentsCell.swift */; };
+		FEEA4BE427FD672200A93401 /* CommentsInputAccVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BE327FD672200A93401 /* CommentsInputAccVIew.swift */; };
+		FEEA4BE627FD8EEB00A93401 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BE527FD8EEB00A93401 /* CommentService.swift */; };
+		FEEA4BE827FD928C00A93401 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BE727FD928C00A93401 /* Comment.swift */; };
+		FEEA4BEA27FD954B00A93401 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEA4BE927FD954B00A93401 /* CommentsViewModel.swift */; };
 		FEEE6CA827F4315900F5B0AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */; };
 		FEEE6CAA27F4332300F5B0AA /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CA927F4332300F5B0AA /* imageUploader.swift */; };
 		FEEE6CAC27F4333700F5B0AA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CAB27F4333700F5B0AA /* AuthService.swift */; };
+		FEEE6CB027FABEDA00F5B0AA /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CAF27FABEDA00F5B0AA /* ProfileHeader.swift */; };
+		FEEE6CB227FAC9AD00F5B0AA /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CB127FAC9AD00F5B0AA /* ProfileCell.swift */; };
+		FEEE6CB427FADE9D00F5B0AA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE6CB327FADE9D00F5B0AA /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,15 +67,39 @@
 		FE241B6C27E986C50078DE35 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSelectorController.swift; sourceTree = "<group>"; };
 		FE241B7027E986ED0078DE35 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		FE241B7227E986FA0078DE35 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		FE241B7427E98F450078DE35 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FE241B7627E9903F0078DE35 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		FE321DBE27E99BBE00C1468F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FE321DC027E99BC900C1468F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FE321DC227E9BD6800C1468F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		FEA2DAAA27FEAF67002E3248 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		FEA2DAAC27FEB49F002E3248 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		FEA2DAAE27FEB676002E3248 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		FEA2DAB027FEBE8C002E3248 /* NotificationViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewmodel.swift; sourceTree = "<group>"; };
+		FEA333E427FB33BB00EC8FF8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FEA333E827FB354800EC8FF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEA333EA27FB38E000EC8FF8 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		FEA333EE27FB3EB200EC8FF8 /* AuthCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCredentials.swift; sourceTree = "<group>"; };
+		FEA333F027FB592100EC8FF8 /* 고민.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "고민.swift"; sourceTree = "<group>"; };
+		FEA333F227FB5C0000EC8FF8 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		FEA333F427FB64C800EC8FF8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		FEA333F627FC35D700EC8FF8 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
+		FEA333F827FC383E00EC8FF8 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		FEA333FA27FC3EFE00EC8FF8 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FEA333FC27FC45D200EC8FF8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FEA333FE27FC48DE00EC8FF8 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		FEEA4BDF27FD622A00A93401 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		FEEA4BE127FD630E00A93401 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		FEEA4BE327FD672200A93401 /* CommentsInputAccVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInputAccVIew.swift; sourceTree = "<group>"; };
+		FEEA4BE527FD8EEB00A93401 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		FEEA4BE727FD928C00A93401 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FEEA4BE927FD954B00A93401 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FEEE6CA927F4332300F5B0AA /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
 		FEEE6CAB27F4333700F5B0AA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FEEE6CAF27FABEDA00F5B0AA /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		FEEE6CB127FAC9AD00F5B0AA /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		FEEE6CB327FADE9D00F5B0AA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +144,9 @@
 		FE241B4C27E982330078DE35 /* Instargram-Clone */ = {
 			isa = PBXGroup;
 			children = (
-				FE241B6427E982BA0078DE35 /* Controller */,
 				FE241B6727E982C20078DE35 /* Model */,
 				FE241B6627E982C00078DE35 /* View */,
+				FE241B6427E982BA0078DE35 /* Controller */,
 				FE241B6527E982BD0078DE35 /* ViewModel */,
 				FE241B6327E982B70078DE35 /* API */,
 				FE241B6227E982B40078DE35 /* Utils */,
@@ -108,6 +156,7 @@
 				FE241B5827E982340078DE35 /* LaunchScreen.storyboard */,
 				FE241B5B27E982340078DE35 /* Info.plist */,
 				FEEE6CA727F4315900F5B0AA /* GoogleService-Info.plist */,
+				FEA333F027FB592100EC8FF8 /* 고민.swift */,
 			);
 			path = "Instargram-Clone";
 			sourceTree = "<group>";
@@ -116,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				FE241B7627E9903F0078DE35 /* extension.swift */,
+				FEA333F827FC383E00EC8FF8 /* InputTextView.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -125,6 +175,10 @@
 			children = (
 				FEEE6CA927F4332300F5B0AA /* imageUploader.swift */,
 				FEEE6CAB27F4333700F5B0AA /* AuthService.swift */,
+				FEA333E427FB33BB00EC8FF8 /* UserService.swift */,
+				FEA333FA27FC3EFE00EC8FF8 /* PostService.swift */,
+				FEEA4BE527FD8EEB00A93401 /* CommentService.swift */,
+				FEA2DAAE27FEB676002E3248 /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -138,8 +192,10 @@
 				FE241B6A27E986AE0078DE35 /* FeedController.swift */,
 				FE241B6C27E986C50078DE35 /* SearchController.swift */,
 				FE241B6E27E986DC0078DE35 /* imageSelectorController.swift */,
+				FEA333F627FC35D700EC8FF8 /* UploadPostController.swift */,
 				FE241B7027E986ED0078DE35 /* NotificationController.swift */,
-				FE241B7227E986FA0078DE35 /* ProfileController.swift */,
+				FEEE6CB327FADE9D00F5B0AA /* ProfileController.swift */,
+				FEEA4BDF27FD622A00A93401 /* CommentsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +204,11 @@
 			isa = PBXGroup;
 			children = (
 				FE321DC227E9BD6800C1468F /* AuthViewModel.swift */,
+				FEA333EA27FB38E000EC8FF8 /* ProfileHeaderViewModel.swift */,
+				FEA333F427FB64C800EC8FF8 /* SearchViewModel.swift */,
+				FEA333FE27FC48DE00EC8FF8 /* PostViewModel.swift */,
+				FEEA4BE927FD954B00A93401 /* CommentsViewModel.swift */,
+				FEA2DAB027FEBE8C002E3248 /* NotificationViewmodel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,7 +216,13 @@
 		FE241B6627E982C00078DE35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEEE6CAF27FABEDA00F5B0AA /* ProfileHeader.swift */,
 				FE241B7427E98F450078DE35 /* FeedCell.swift */,
+				FEEE6CB127FAC9AD00F5B0AA /* ProfileCell.swift */,
+				FEA333F227FB5C0000EC8FF8 /* SearchCell.swift */,
+				FEEA4BE127FD630E00A93401 /* CommentsCell.swift */,
+				FEEA4BE327FD672200A93401 /* CommentsInputAccVIew.swift */,
+				FEA2DAAA27FEAF67002E3248 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +230,11 @@
 		FE241B6727E982C20078DE35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEA333EE27FB3EB200EC8FF8 /* AuthCredentials.swift */,
+				FEA333E827FB354800EC8FF8 /* User.swift */,
+				FEA333FC27FC45D200EC8FF8 /* Post.swift */,
+				FEEA4BE727FD928C00A93401 /* Comment.swift */,
+				FEA2DAAC27FEB49F002E3248 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,20 +362,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA333FF27FC48DE00EC8FF8 /* PostViewModel.swift in Sources */,
+				FEEE6CB227FAC9AD00F5B0AA /* ProfileCell.swift in Sources */,
 				FE241B6F27E986DC0078DE35 /* imageSelectorController.swift in Sources */,
+				FEA333F727FC35D700EC8FF8 /* UploadPostController.swift in Sources */,
+				FEA2DAAB27FEAF67002E3248 /* NotificationCell.swift in Sources */,
+				FEA333E527FB33BB00EC8FF8 /* UserService.swift in Sources */,
+				FEEA4BEA27FD954B00A93401 /* CommentsViewModel.swift in Sources */,
 				FE241B4E27E982330078DE35 /* AppDelegate.swift in Sources */,
 				FE241B6D27E986C50078DE35 /* SearchController.swift in Sources */,
+				FEA333EB27FB38E000EC8FF8 /* ProfileHeaderViewModel.swift in Sources */,
 				FE321DC127E99BC900C1468F /* RegisterViewController.swift in Sources */,
+				FEEA4BE627FD8EEB00A93401 /* CommentService.swift in Sources */,
+				FEEA4BE027FD622A00A93401 /* CommentsController.swift in Sources */,
 				FE241B7727E9903F0078DE35 /* extension.swift in Sources */,
+				FEA333F327FB5C0000EC8FF8 /* SearchCell.swift in Sources */,
 				FE241B7127E986ED0078DE35 /* NotificationController.swift in Sources */,
+				FEA333E927FB354800EC8FF8 /* User.swift in Sources */,
 				FE241B6927E983320078DE35 /* MainTabController.swift in Sources */,
 				FEEE6CAA27F4332300F5B0AA /* imageUploader.swift in Sources */,
+				FEA333F927FC383E00EC8FF8 /* InputTextView.swift in Sources */,
+				FEEE6CB427FADE9D00F5B0AA /* ProfileController.swift in Sources */,
+				FEEA4BE227FD630E00A93401 /* CommentsCell.swift in Sources */,
+				FEA2DAAF27FEB676002E3248 /* NotificationService.swift in Sources */,
+				FEA333F127FB592100EC8FF8 /* 고민.swift in Sources */,
 				FE241B5027E982330078DE35 /* SceneDelegate.swift in Sources */,
+				FEEE6CB027FABEDA00F5B0AA /* ProfileHeader.swift in Sources */,
 				FE241B6B27E986AE0078DE35 /* FeedController.swift in Sources */,
-				FE241B7327E986FA0078DE35 /* ProfileController.swift in Sources */,
 				FE321DC327E9BD6800C1468F /* AuthViewModel.swift in Sources */,
+				FEA333FD27FC45D200EC8FF8 /* Post.swift in Sources */,
+				FEA2DAB127FEBE8C002E3248 /* NotificationViewmodel.swift in Sources */,
 				FEEE6CAC27F4333700F5B0AA /* AuthService.swift in Sources */,
+				FEA333FB27FC3EFE00EC8FF8 /* PostService.swift in Sources */,
+				FEA333F527FB64C800EC8FF8 /* SearchViewModel.swift in Sources */,
+				FEEA4BE827FD928C00A93401 /* Comment.swift in Sources */,
 				FE241B7527E98F450078DE35 /* FeedCell.swift in Sources */,
+				FEA2DAAD27FEB49F002E3248 /* Notification.swift in Sources */,
+				FEA333EF27FB3EB200EC8FF8 /* AuthCredentials.swift in Sources */,
+				FEEA4BE427FD672200A93401 /* CommentsInputAccVIew.swift in Sources */,
 				FE321DBF27E99BBE00C1468F /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

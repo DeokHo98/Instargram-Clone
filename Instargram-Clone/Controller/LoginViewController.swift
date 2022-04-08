@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import Firebase
+
+
+protocol AuthebtucatuibDelegate: AnyObject {
+    func authenticationComplete()
+}
+
+
 
 class LoginViewController: UIViewController {
     
     //MARK: - 속성
     //로그인 뷰 모델입니다.
     private var viewModel = LoginViewModel()
+    
+    //델리게이트패턴을 사용하기위해 변수로 만듭니다.
+   weak var delegate: AuthebtucatuibDelegate?
+    
     
     //인스타그램 타이틀입니다.
     private let iconImage: UIImageView = {
@@ -25,6 +37,7 @@ class LoginViewController: UIViewController {
     private let emailTextField: UITextField = {
         let tf = UITextField()
         tf.loginAndReisterTextField(title: "  이메일")
+      
         return tf
     }()
     
@@ -32,12 +45,13 @@ class LoginViewController: UIViewController {
     private let passwordTextField: UITextField = {
         let tf = UITextField()
         tf.loginAndReisterTextField(title: "  비밀번호", isSecureTextEntry: true)
+     
         return tf
     }()
     
     //이메일,패스워드 텍스트필드와 로그인버튼, 비밀번호찾기 버튼을 스택뷰로 묶은것입니다.
     private lazy var stackView: UIStackView = {
-        let sv = UIStackView(arrangedSubviews: [emailTextField,passwordTextField, loginButton,forgetPasswordButton])
+        let sv = UIStackView(arrangedSubviews: [emailTextField,passwordTextField, loginButton])
         sv.axis = .vertical
         sv.spacing = 20
         return sv
@@ -62,13 +76,7 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    //비밀번호 찾기 버튼입니다.
-    private let forgetPasswordButton: UIButton = {
-       let button = UIButton()
-        button.attributedTitle(firstPart: "비밀번호를 잃어버리셨나요?", secondPart: "  비밀번호찾기")
-        button.addTarget(self, action: #selector(tapDontHaveButton), for: .touchUpInside)
-        return button
-    }()
+  
     
     //MARK: - 라이프사이클
 
@@ -85,7 +93,7 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         
-        gradient()
+        gradient(view: view)
         
         hideKeyboardWhenTappedAround()
         
@@ -113,6 +121,7 @@ class LoginViewController: UIViewController {
     //회원가입버튼을 클릭했을때 호출되는 셀렉터 메서드입니다.
     @objc func tapDontHaveButton() {
         let controller = RegisterViewController()
+        controller.deleagte = delegate
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -127,7 +136,17 @@ class LoginViewController: UIViewController {
         unpdateForm()
     }
     
+    //로그인 메서드입니다.
     @objc func loginButtonTap() {
+        guard let email = emailTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        AuthService.logUserIn(email: email, password: password) { result, error in
+            if error != nil {
+                print("로그인 에러")
+                return
+            }
+            self.delegate?.authenticationComplete()
+        }
     }
 }
 
